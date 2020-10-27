@@ -24,6 +24,10 @@ header {
 	border-radius: 25px;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:link {
 	color: #000000;
 }
@@ -64,7 +68,7 @@ p {
 }
 
 #homehero {
-	background-image: url(learning4.png);
+	background-image: url(lear ning4.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -87,18 +91,63 @@ nav a {
 	grid-template-rows: auto; 
 	grid-template-columns: 1fr 1fr;	
 	margin: 5%;
+	margin-top: 0px;
 	height: 500px;
+	/*
 	background-image: url(learning4.png);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
+	*/
+	border-radius: 25px;
+
+}
+
+#section_one_books {
+	display: grid;
+	grid-template-rows: auto; 
+	grid-template-columns: 1fr 1fr;	
+	margin: 5%;
+	height: max-content;
 	border-radius: 25px;
 }
 
-#section_one .inner {
+.inner {
 	border: 5px solid #EEEEEE;
 	border-radius: 25px 0px 0px 25px;
 	padding: 30px;
 	background-color: #EEEEEE;
+
+}
+
+.article {
+	min-height: 200px;
+	min-width: 200px;
+	
+	height: 10%;
+	width: 10%;
+	
+	border-radius: 25px;
+	background-color: #FFFFFF;
+	
+	margin: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	
+	color: #FFFFFF;
+	font-size: 24px;
+	
+}
+
+.article p {
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #000000;
+	padding: 10px;
+	border-radius: 15px;
+	font-weight: 700;
 }
 
 #section_one section {
@@ -113,18 +162,29 @@ nav a {
 	padding-left: 10px;
 }
 
+#article_section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 #section_two {
 	margin: 5%;
 	padding: 30px;
 	background-color: #EEEEEE;
 	border-radius: 25px;
+	
 }
 
 .rounded {
 	border-radius: 25px;
 }
 
-
+#mobile_book_image {
+	display: none;
+}
 
 #wrapper {
 	background-color: #FFFFFF;
@@ -206,14 +266,27 @@ footer {
 	
 	#section_one {
 		height: 100%;
+		/*
 		background-image: url(learning4.png);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		*/
+		min-height: 100px;
+		background-repeat: no-repeat;
+		border-radius: 40px 25px 25px 40px;
+	}
+	/*
+	#section_one_books {
+		height: 50%;
+		background-image: url(book.png);
 		background-size: cover;
 		min-height: 100px;
 		background-repeat: no-repeat;
 		border-radius: 40px 25px 25px 40px;
 	}
+	*/
 	
-	#section_one .inner {
+	.inner {
 		border: 5px solid #EEEEEE;
 		border-radius: 25px 0px 0px 25px;
 		padding: 30px;
@@ -277,6 +350,17 @@ footer {
 		border-radius: 40px 25px 25px 40px;
 	}
 	
+	/*
+	#section_one_books {
+		height: 100%;
+		background-image: url(book.png);
+		background-size: cover;
+		min-height: 512.75px;
+		background-repeat: no-repeat;
+		border-radius: 40px 25px 25px 40px;
+	}
+	*/
+	
 	#footer_div {
 		display: flex;
 		flex-wrap: wrap;
@@ -290,6 +374,8 @@ footer {
 		max-width: 60%;
 		min-height: 10%;
 		max-height: 10%;
+		height: max-content;
+		width: max-content;
 	}
 	
 	#footer_sections p {
@@ -305,6 +391,22 @@ footer {
 }
 
 @media (max-width: 426px) {
+	body, html {
+		min-width: 250px;
+		height: max-content;
+	}
+	nav h3 {
+		font-size: 100%;
+	}
+	
+	#logo_area {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+	
 	#wrapper {
 		margin-left: auto; 
 		margin-right: auto; 
@@ -326,28 +428,60 @@ footer {
 	}
 	
 	#section_one {
-		display: grid;
+		display: inline-block;
 		grid-template-rows: 1fr 1fr; 
 		grid-template-columns: 1fr;	
-		background-image: url(learning4.png);
+		/*background-image: url(learning4.png);*/
 		background-size: cover;
-		min-height: 600px;
-		max-height: 600px;
+		min-height: 0px;
+		max-height: 0px;
 		background-repeat: no-repeat;
 		border-radius: 25px;
 	}
 	
-	#section_one .inner {
+	.inner {
+		height: max-content;
 		border: 5px solid #EEEEEE;
 		border-radius: 25px;
 		padding: 20px;
 		background-color: #EEEEEE;
 		background-size: cover;
-		min-height: 500px;
-		max-height: 500px;
-		margin-top: 50px;
 		overflow: scroll;
 	}
 	
+	#section_one img, #section_one_books img {
+		display: none;
+	}
 	
+	#section_one_books {
+		grid-template-columns: 1fr;	
+	}
+	
+	#mobile_book_image {
+		display: block;
+		height: 100%; 
+		width: 90%; 
+		object-fit: cover; 
+		border-radius: 25px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	.inner h1 {
+		font-size: 40px;
+		font-weight: 750;
+		text-align: center;
+	}
+	
+	.inner p {
+		text-align: center;
+	}
+	
+	#footer_sections {
+		height: max-content;
+		width: max-content;
+		min-width: max-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
