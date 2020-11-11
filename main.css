@@ -368,14 +368,14 @@ footer {
 	#section_one_image {
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 		display: flex;
 		justify-content: center;
 	}
 	
 	#section_one_image img {
 		width: 40%;
-		height: auto;
+		height: 40%;
 		padding: 0px;
 		margin: 0px;
 	}
@@ -526,11 +526,11 @@ footer {
 	
 	#section_one_image img {
 		width: 80%;
-		height: auto;
+		height: 80%;
 	}
 	
 	#section_one_image {
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 	
 	#quicklink {
