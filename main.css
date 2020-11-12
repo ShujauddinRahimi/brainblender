@@ -1,5 +1,5 @@
 html {
-
+	margin-left: calc(100vw - 100%);
 }
 
 body {
@@ -41,8 +41,8 @@ a:visited {
 	color: #000000;
 }
 
-a:hover {
-	/*color: #ABABAB;*/
+nav a:hover {
+	color: #ABABAB;
 }
 
 h1 {
@@ -112,6 +112,15 @@ input[type="submit"] {
     margin-right: auto;
 }
 
+ol li {
+	font-size: 21px;
+	padding: 10px 0 10px 0;
+}
+
+ol {
+	padding-left: 0px;
+}
+
 #section_one {
 	display: grid;
 	grid-template-rows: auto;
@@ -148,6 +157,11 @@ input[type="submit"] {
 	margin-right: auto;
 }
 
+#article_header {
+	display: flex;
+	align-items: center;
+}
+
 #tooltip_section {
 	display: inline-grid;
 	grid-template-columns: 850px;
@@ -181,6 +195,13 @@ input[type="submit"] {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.article_body_text {
+	width: 700px;
+	min-width: 270px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #footer_sections,
@@ -287,7 +308,6 @@ input[type="submit"] {
 	opacity: 0.6;
 }
 
-
 footer {
 	width: 1280px;
 	font-size: 75%;
@@ -369,6 +389,7 @@ footer {
 		justify-content: center;
 		padding-left: 100px;
 		padding-right: 100px;
+		word-wrap: break-word;
 	}
 	
 	#section_one {
@@ -439,6 +460,11 @@ footer {
 	
 	.article_text {
 		padding: 0px;
+	}
+	
+	.article_body_text {
+		width: 550px;
+		word-wrap: break-word;
 	}
 	
 	#section_two .article_text h2, #section_two .article_text p {
@@ -599,6 +625,17 @@ footer {
 	input[type="submit"] {
 		grid-column: 2 / 3;
 		width: 9em;
+	}
+	
+	ol li {
+		font-size: 13px;
+	}
+	
+	.article_body_text {
+		width: 80%;
+		min-width: 270px;
+		font-size: 13px;
+		
 	}
 }
 
