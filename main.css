@@ -628,13 +628,13 @@ footer {
 	}
 	
 	ol li {
-		font-size: 13px;
+		font-size: 18px;
 	}
 	
 	.article_body_text {
-		width: 80%;
+		width: 100%;
 		min-width: 270px;
-		font-size: 13px;
+		font-size: 18px;
 		
 	}
 }
