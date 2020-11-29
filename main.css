@@ -117,9 +117,11 @@ ol li {
 	padding: 10px 0 10px 0;
 }
 
+
 ol {
 	padding-left: 0px;
 }
+
 
 #section_one {
 	display: grid;
@@ -199,7 +201,6 @@ ol {
 
 .article_body_text {
 	width: 700px;
-	min-width: 270px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -632,7 +633,6 @@ footer {
 	}
 	.article_body_text {
 		width: 100%;
-		min-width: 270px;
 		font-size: 18px;
 	}
 	
